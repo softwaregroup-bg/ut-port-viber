@@ -1,5 +1,3 @@
-const joi = require('joi');
-
-module.exports = joi.object({
+module.exports = joi => joi.object({
 
 }).description('Message received from Viber');

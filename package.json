@@ -3,10 +3,9 @@
     "version": "7.1.0",
     "main": "index.js",
     "dependencies": {
-        "joi": "13.7.0",
         "mime-types": "2.1.22",
         "request": "2.88.0",
-        "ut-port-webhook": "^7.0.0"
+        "ut-port-webhook": "^8.0.0"
     },
     "devDependencies": {
         "sort-keys": "2.0.0",

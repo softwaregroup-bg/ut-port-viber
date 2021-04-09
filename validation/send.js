@@ -1,6 +1,4 @@
-const joi = require('joi');
-
-const common = joi.object({
+const common = joi => joi.object({
     url: joi.string().required().valid('https://chatapi.viber.com/pa/send_message'),
     headers: joi.object({
         'X-Viber-Auth-Token': joi.string().required()
@@ -41,14 +39,14 @@ const common = joi.object({
         apiDoc: 'https://developers.viber.com/docs/api/rest-bot-api/#general-send-message-parameters'
     });
 
-module.exports = joi.alternatives().try([
+module.exports = joi => joi.alternatives().try([
     joi.object({
         body: joi.object({
             type: 'text',
             text: joi.string().required()
         })
     })
-        .concat(common)
+        .concat(common(joi))
         .meta({
             apiDoc: 'https://developers.viber.com/docs/api/rest-bot-api/#text-message'
         })
@@ -61,7 +59,7 @@ module.exports = joi.alternatives().try([
             thumbnail: joi.string().uri({scheme: ['http', 'https']}).required()
         })
     })
-        .concat(common)
+        .concat(common(joi))
         .meta({
             apiDoc: 'https://developers.viber.com/docs/api/rest-bot-api/#picture-message'
         })
@@ -75,7 +73,7 @@ module.exports = joi.alternatives().try([
             })
         })
     })
-        .concat(common)
+        .concat(common(joi))
         .meta({
             apiDoc: 'https://developers.viber.com/docs/api/rest-bot-api/#location-message'
         })
