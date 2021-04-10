@@ -1,3 +1,12 @@
+## [7.2.1](https://github.com/softwaregroup-bg/ut-port-viber/compare/v7.2.0...v7.2.1) (2021-04-10)
+
+
+### Bug Fixes
+
+* add traceid ([3ea7ef1](https://github.com/softwaregroup-bg/ut-port-viber/commit/3ea7ef13b398b0c1dba2e946a78bc4a74071575b))
+
+
+
 # [7.2.0](https://github.com/softwaregroup-bg/ut-port-viber/compare/v7.1.0...v7.2.0) (2021-04-09)
 
 
