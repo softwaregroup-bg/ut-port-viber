@@ -239,7 +239,7 @@ module.exports = function viber({utMethod}) {
                         }));
                     }));
                 },
-                [`${hook}.identity.request.receive`]: (msg, {params, headers}) => {
+                [`${hook}.identity.request.receive`]: (msg, {params, request: {headers}}) => {
                     if (typeof headers['x-viber-content-signature'] !== 'string') {
                         throw this.errors['webhook.missingHeader']({params: {header: 'x-viber-content-signature'}});
                     }
@@ -249,11 +249,11 @@ module.exports = function viber({utMethod}) {
                         platform: 'viber'
                     };
                 },
-                [`${hook}.identity.response.send`]: async(msg, {headers, payload}) => {
+                [`${hook}.identity.response.send`]: async(msg, {request: {headers, payload}}) => {
                     const signature = headers['x-viber-content-signature'];
                     const serverSignature = crypto
                         .createHmac('sha256', msg.secret)
-                        .update(payload, 'utf8')
+                        .update(payload)
                         .digest();
                     if (crypto.timingSafeEqual(Buffer.from(signature, 'hex'), serverSignature)) {
                         return msg;
