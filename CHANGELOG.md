@@ -1,3 +1,12 @@
+## [7.2.2](https://github.com/softwaregroup-bg/ut-port-viber/compare/v7.2.1...v7.2.2) (2021-04-10)
+
+
+### Bug Fixes
+
+* get data from $meta.request ([36ec27e](https://github.com/softwaregroup-bg/ut-port-viber/commit/36ec27eb9b717f11604164c41e38dd25f0ed38b9))
+
+
+
 ## [7.2.1](https://github.com/softwaregroup-bg/ut-port-viber/compare/v7.2.0...v7.2.1) (2021-04-10)
 
 
