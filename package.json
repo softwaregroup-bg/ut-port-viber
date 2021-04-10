@@ -5,7 +5,8 @@
     "dependencies": {
         "mime-types": "2.1.22",
         "request": "2.88.0",
-        "ut-port-webhook": "^8.0.0"
+        "ut-port-webhook": "^8.0.1",
+        "uuid": "3.3.2"
     },
     "devDependencies": {
         "tap": "^12.5.3",

@@ -3,6 +3,7 @@ const crypto = require('crypto');
 const path = require('path');
 const URL = require('url').URL;
 const mime = require('mime-types');
+const uuid = require('uuid').v4;
 
 const sendMessage = (msg, {auth}) => {
     const url = '/send_message';
@@ -211,7 +212,13 @@ module.exports = function viber({utMethod}) {
             const {namespace, hook} = this.config;
             return {
                 async ready() {
-                    const botContext = await utMethod('bot.botContext.fetch#[]')({platform: 'viber'});
+                    const botContext = await utMethod('bot.botContext.fetch#[]')({
+                        platform: 'viber'
+                    }, {
+                        forward: {
+                            'x-b3-traceid': uuid().replace(/-/g, '')
+                        }
+                    });
                     return botContext && Promise.all(botContext.map(({clientId, appId, accessToken}) => {
                         const url = typeof this.config.url === 'object' ? this.config.url[clientId] : this.config.url;
                         return url && typeof url === 'string' && new Promise((resolve, reject) => request.post({
