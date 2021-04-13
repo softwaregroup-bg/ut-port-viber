@@ -1,3 +1,12 @@
+## [7.2.4](https://github.com/softwaregroup-bg/ut-port-viber/compare/v7.2.3...v7.2.4) (2021-04-13)
+
+
+### Bug Fixes
+
+* k8s port ([0d38b66](https://github.com/softwaregroup-bg/ut-port-viber/commit/0d38b6666fab66519d4f343d605c22ca47a57c05))
+
+
+
 ## [7.2.3](https://github.com/softwaregroup-bg/ut-port-viber/compare/v7.2.2...v7.2.3) (2021-04-10)
 
 
