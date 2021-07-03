@@ -1,6 +1,6 @@
 {
     "name": "ut-port-viber",
-    "version": "7.2.4",
+    "version": "7.2.5",
     "main": "index.js",
     "dependencies": {
         "mime-types": "2.1.22",
