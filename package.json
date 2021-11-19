@@ -9,11 +9,11 @@
         "uuid": "3.3.2"
     },
     "devDependencies": {
-        "tap": "^12.5.3",
+        "tap": "^15.1.2",
         "ut-tools": "^6.37.0"
     },
     "peerDependencies": {
-        "ut-run": "^10.52.0"
+        "ut-run": "^10.64.6"
     },
     "optionalDependencies": {
         "ut-browser-request": "^1.0.2"
