@@ -1,3 +1,12 @@
+## [7.2.7](https://github.com/softwaregroup-bg/ut-port-viber/compare/v7.2.6...v7.2.7) (2021-11-19)
+
+
+### Bug Fixes
+
+* url config ([581651c](https://github.com/softwaregroup-bg/ut-port-viber/commit/581651c86839f18c38d79395d4baae1e44806c79))
+
+
+
 ## [7.2.6](https://github.com/softwaregroup-bg/ut-port-viber/compare/v7.2.5...v7.2.6) (2021-07-03)
 
 
