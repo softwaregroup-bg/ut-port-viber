@@ -210,8 +210,8 @@ module.exports = function viber({utMethod}) {
 
         handlers() {
             const {namespace, hook} = this.config;
-            const webhook = (appId, clientId) =>
-                `${this.config.url}${this.config.path.replace('{appId}', appId).replace('{clientId}', clientId)}`;
+            const webhook = (base, appId, clientId) =>
+                `${base}${this.config.path.replace('{appId}', appId).replace('{clientId}', clientId)}`;
             return {
                 async ready() {
                     const botContext = await utMethod('bot.botContext.fetch#[]')({
@@ -229,7 +229,7 @@ module.exports = function viber({utMethod}) {
                             json: true,
                             body: {
                                 auth_token: accessToken,
-                                url: url + webhook(appId, clientId),
+                                url: webhook(url, appId, clientId),
                                 event_types: ['conversation_started']
                             }
                         }, (error, response, body) => {
