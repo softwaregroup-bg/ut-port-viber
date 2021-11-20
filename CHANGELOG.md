@@ -1,3 +1,12 @@
+## [7.2.8](https://github.com/softwaregroup-bg/ut-port-viber/compare/v7.2.7...v7.2.8) (2021-11-20)
+
+
+### Bug Fixes
+
+* webhook ([40cae7f](https://github.com/softwaregroup-bg/ut-port-viber/commit/40cae7fa819b9d58af0b209e4c204786b545e2b7))
+
+
+
 ## [7.2.7](https://github.com/softwaregroup-bg/ut-port-viber/compare/v7.2.6...v7.2.7) (2021-11-19)
 
 
