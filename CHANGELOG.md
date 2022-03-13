@@ -1,3 +1,7 @@
+## [7.2.9](https://github.com/softwaregroup-bg/ut-port-viber/compare/v7.2.8...v7.2.9) (2022-03-13)
+
+
+
 ## [7.2.8](https://github.com/softwaregroup-bg/ut-port-viber/compare/v7.2.7...v7.2.8) (2021-11-20)
 
 
