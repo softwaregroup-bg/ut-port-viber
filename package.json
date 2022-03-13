@@ -5,11 +5,11 @@
     "dependencies": {
         "mime-types": "2.1.22",
         "request": "2.88.0",
-        "ut-port-webhook": "^8.1.1",
-        "uuid": "3.3.2"
+        "ut-port-webhook": "^8.3.0",
+        "uuid": "8.3.2"
     },
     "devDependencies": {
-        "tap": "^15.1.2",
+        "tap": "^16.0.0",
         "ut-tools": "^6.37.0"
     },
     "peerDependencies": {
